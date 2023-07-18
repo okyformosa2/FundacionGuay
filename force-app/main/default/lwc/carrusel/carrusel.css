@@ -1,0 +1,22 @@
+.contenedor {
+    display: block;
+    border: none;
+    width: 100%;
+    height: 50%;
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+    padding: 0;
+    margin: 0;
+    
+}
+
+.imagencarrusel {
+    display: block;
+    border: none;
+    width: 50%;
+    height: auto;
+    align-content: center;
+    margin-left: 25%;
+    
+    
+  }

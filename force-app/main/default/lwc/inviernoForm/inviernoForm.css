@@ -1,0 +1,62 @@
+* {
+    background-color: white;
+}
+
+/* Formato de la caja contenedora --->*/
+
+.contenedor {
+
+    display: grid;
+    grid-template-columns: 75% 25%;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+}
+.imagenguay {
+
+    grid-area: auto;
+    display: flex;
+    height: auto;
+}
+
+.form-container {
+    grid-area: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+}
+
+
+/*<!-- Formato del Botón enviar --->*/
+
+ .form-container input[type="submit"] {
+    
+    background-color: #33b5e5;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    color: white;
+
+/*<!-- Formato de la caja contenedora del input --->*/
+
+}
+.form-container input[type="text"],
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    /*box-sizing: border-box;*/
+    margin-bottom: 10px;
+    font-size: 12px;
+}

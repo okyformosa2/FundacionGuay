@@ -1,0 +1,96 @@
+<template >
+    <div class="todo">   
+        <div class="menu">
+            <div class="logo" style="float: left;">
+                <img src={logo} ></img> 
+            </div>
+            <div class="opciones" align="rigth">              
+            <nav>
+                <ul>
+                    <li><a href="#campanas" onclick={selectOption} data-option="Campañas">Campañas</a></li>
+                    <li><a href="#sobrenos" onclick={selectOption} data-option="Sobre Nosotros">Sobre Nosotros</a></li> 
+                </ul>
+            </nav>
+        </div>
+        </div> 
+        <div class="contenedor">
+            <div class="imagencarrusel" >
+                <lightning-carousel enable-auto-scroll>
+                <lightning-carousel-image
+                    src = {nombredelaImagen1}
+                    header = "Uno"
+                    description = "Campaña Uno"
+                    alternative-text = "Descripción de la campaña uno"
+                    href = "https://guayerd76-dev-ed.develop.my.site.com/FundacionGuay/s/campuno">
+                </lightning-carousel-image>
+                <lightning-carousel-image
+                    src = {nombredelaImagen2}
+                    header = "Dos"
+                    description = "Campaña dos"
+                    alternative-text = "Descripción de la Campaña dos"
+                    href = "https://guayerd76-dev-ed.develop.my.site.com/FundacionGuay/s/campdos">
+                </lightning-carousel-image>
+                <lightning-carousel-image
+                    src = {nombredelaImagen3}
+                    header = "Tres"
+                    description = "Campaña tres"
+                    alternative-text = "Descripción de la campaña tres"
+                    href = "https://guayerd76-dev-ed.develop.my.site.com/FundacionGuay/s/camptres">
+                </lightning-carousel-image>
+            </lightning-carousel>
+            </div>
+        </div>
+        <div id="campanas" class="campanas">
+            <h1>Campañas</h1>
+            <lightning-layout multiple-rows>
+                <lightning-layout-item size="6" padding="around-small" class="imagencampuno"> 
+                    <img src={imagen1}>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="6" padding="around-small" class="textocampuno">
+                    <h2>Campaña del Día del Padre</h2>
+                    <h3>En que consiste...</h3>
+                    <p>Texto 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti, recusandae numquam totam minima atque ea, magni similique, quo consectetur labore. Aspernatur deleniti eveniet tempora officia possimus dolor vel eligendi.</p>
+                    <br>
+                    <lightning-button variant="brand" label="Donar.." onclick={llamado1} class="boton"></lightning-button>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="6" padding="around-small" class="textocampdos">
+                    <h2>Campaña Invierno 2023</h2>
+                    <h3>En que consiste...</h3>
+                    <p>Texto 2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia temporibus vel illo ratione vitae velit eveniet fugiat aspernatur quidem, repudiandae, corrupti architecto eum natus magni alias a, ab mollitia nobis.</p>
+                    <br>
+                    <lightning-button variant="brand" label="Donar.." onclick={llamado2} class="boton"></lightning-button>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="6" padding="around-small" class="imagencampdos">  
+                    <img src={imagen2}>
+                </lightning-layout-item>
+
+            </lightning-layout>
+        </div>
+        <div id="sobrenos" class="sobrenos">
+            <h1>Sobre Nosotros</h1>
+            <lightning-layout class="cajasobrenos">
+                <lightning-layout-item size="3" padding="around-small">
+                    
+                    <img src={imagen3}>
+                </lightning-layout-item>
+                <lightning-layout-item size="6" padding="around-small">
+                    <h2>Quiénes Somos? Qué Hacemos? Cuál es nuestro objetivo?</h2>
+                    <h3>Aquí las respuestas...</h3>
+                    <p>Texto 2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia temporibus vel illo ratione vitae velit eveniet fugiat aspernatur quidem, repudiandae, corrupti architecto eum natus magni alias a, ab mollitia nobis.</p>
+                    <p>Texto 2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia temporibus vel illo ratione vitae velit eveniet fugiat aspernatur quidem, repudiandae, corrupti architecto eum natus magni alias a, ab mollitia nobis.</p>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" padding="around-small">
+                    
+                    <img src={imagen4}>
+                </lightning-layout-item>
+                
+            </lightning-layout>
+        </div>
+        <footer>
+
+        </footer>
+    </div>    
+</template>

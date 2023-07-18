@@ -1,0 +1,96 @@
+<template>
+    
+    <lightning-card>
+        <div class="contenedor">
+            <div class="imagenguay">
+                <img src={nombredelaImagen}>
+            </div>
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                <input type="hidden" name="oid" value="00DDp000001ybjV"/>
+                <input type="hidden" name="retURL" value="http://donacionweb"/>
+                
+               
+                <div class="form-container">
+                    <label for="first_name">Nombre</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br/>
+                    <label for="last_name">Apellidos</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text"/><br/>
+                    <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text"/><br/>
+        
+                    Pais de residencia:<br/>
+                    <select  data-id="00NDp000009rvBz" name="00NDp000009rvBz" title="Pais de residencia" onchange='{activarDesactivarSelect}'>
+                        <option value="">Seleccione por favor...</option>
+                        <option value="Antigua y Barbuda - AG">Antigua y Barbuda - AG</option>
+                        <option value="Argentina - AR">Argentina - AR</option>
+                        <option value="Bahamas - BS">Bahamas - BS</option>
+                        <option value="Barbados - BB">Barbados - BB</option>
+                        <option value="Belice - BZ">Belice - BZ</option>
+                        <option value="Bolivia - BO">Bolivia - BO</option>
+                        <option value="Brasil - BR">Brasil - BR</option>
+                        <option value="Canadá - CA">Canadá - CA</option>
+                        <option value="Chile - CL">Chile - CL</option>
+                        <option value="Colombia - CO">Colombia - CO</option>
+                        <option value="Costa Rica - CR">Costa Rica - CR</option>
+                        <option value="Cuba - CU">Cuba - CU</option>
+                        <option value="Dominica - DM">Dominica - DM</option>
+                        <option value="Ecuador - EC">Ecuador - EC</option>
+                        <option value="El Salvador - SV">El Salvador - SV</option>
+                        <option value="Estados Unidos - US">Estados Unidos - US</option>
+                        <option value="Granada - GD">Granada - GD</option>
+                        <option value="Guatemala - GT">Guatemala - GT</option>
+                        <option value="Guyana - GY">Guyana - GY</option>
+                        <option value="Haití - HT">Haití - HT</option>
+                        <option value="Honduras - HN">Honduras - HN</option>
+                        <option value="Jamaica - JM">Jamaica - JM</option>
+                        <option value="México - MX">México - MX</option>
+                        <option value="Nicaragua - NI">Nicaragua - NI</option>
+                        <option value="Panamá - PA">Panamá - PA</option>
+                        <option value="Paraguay - PY">Paraguay - PY</option>
+                        <option value="Perú - PE">Perú - PE</option>
+                        <option value="República Dominicana - DO">República Dominicana - DO</option>
+                        <option value="San Cristóbal y Nieves - KN">San Cristóbal y Nieves - KN</option>
+                        <option value="Santa Lucía - LC">Santa Lucía - LC</option>
+                        <option value="San Vicente y las Granadinas - VC">San Vicente y las Granadinas - VC</option>
+                        <option value="Surinam - SR">Surinam - SR</option>
+                        <option value="Trinidad y Tobago - TT">Trinidad y Tobago - TT</option>
+                        <option value="Uruguay - UY">Uruguay - UY</option>
+                        <option value="Venezuela - VE">Venezuela - VE</option>
+                    </select><br/>
+        
+                <!--Provincia:<br/-->
+                <label style="display: none;">Provincia:</label><br/>
+                <select  data-id="00NDp000009rvC4" name="00NDp000009rvC4" title="Provincias" disabled={provincia}>
+                    <option value="">Seleccione por favor...</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="Chaco">Chaco</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="Entre Ríos">Entre Ríos</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="La Pampa">La Pampa</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Neuquén">Neuquén</option>
+                    <option value="Río Negro">Río Negro</option>
+                    <option value="Salta">Salta</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Santiago del Estero">Santiago del Estero</option>
+                    <option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+                    <option value="Tucumán">Tucumán</option>
+                    </select><br/>
+                    <br/>
+                    <label for="mobile">Teléfono Movil</label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text"/><br/>
+                    <label for="phone">Teléfono</label><input  id="phone" maxlength="40" name="phone" size="20" type="text"/><br/>
+                    <input type="submit" name="Guardar" onclick={mostrarAlerta}>
+                </div>    
+            </form>
+            
+        </div>
+    </lightning-card>
+
+</template>
