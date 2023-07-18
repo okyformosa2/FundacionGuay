@@ -1,18 +1,34 @@
-# Salesforce DX Project: Next Steps
+# Paráctica Profesional Guayerd
+## Fundación Guay
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+  Se realizó una aplicación orientada a campañas y donaciones para organizaciones sin fines de lucro.
+La misma consta de una página en el cual invita a los futuros o posibles donantes a conocer sobre las campañas activas, luego de demostrar interés puesden dejar sus datos en un formulario (web to Lead), para que posteriormente un voluntario de la organización haga el contacto y seguimiento para que ese prospecto se convierta en oportunidad y eventualmente en donación. 
+  También se realizó una series de reportes y paneles que permiten hacer el análisis para la toma desiciones.
 
-## How Do You Plan to Deploy Your Changes?
+## Herramientas Técnicas utilizadas
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+- Implementación y seguridad de bases de datos.
+- Desarrollo de plataformas personalizadas.
+- Utilización de la consola de desarrollo de Salesforce.
+- Adaptación de aplicaciones en el entorno Salesforce.
+- Uso del framework Salesforce Lightning.
+- Comprendiendo los conceptos de Visualforce.
+- Explorando soluciones de búsqueda en Salesforce.
+- Programación orientada a objetos en Apex.
+- Aplicación de Salesforce Flow.
+- Lightning Web Component.
+- Experience Cloud.
 
-## Configure Your Salesforce DX Project
+## Participantes del desarrollo
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+- Oscar Alejandro Ortiz
+- Diego Fedre
+- Jhonatan Grosso
+- Matías Osores
+- Anthony Rochelle
+- Sofia García
+- Frank Pacho
 
-## Read All About It
+## Link de la página
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+
