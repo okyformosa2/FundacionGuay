@@ -5,7 +5,7 @@
 La misma consta de una página en el cual invita a los futuros o posibles donantes a conocer sobre las campañas activas, luego de demostrar interés puesden dejar sus datos en un formulario (web to Lead), para que posteriormente un voluntario de la organización haga el contacto y seguimiento para que ese prospecto se convierta en oportunidad y eventualmente en donación. 
   También se realizó una series de reportes y paneles que permiten hacer el análisis para la toma desiciones.
 
-## Hermientas Técnicas utilizadas
+## Herramientas Técnicas utilizadas
 
 - Implementación y seguridad de bases de datos.
 - Desarrollo de plataformas personalizadas.
