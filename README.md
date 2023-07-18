@@ -31,4 +31,4 @@ La misma consta de una página en el cual invita a los futuros o posibles donant
 
 ## Link de la página
 
-https://guayerd76-dev-ed.develop.my.site.com/FundacionGuay/s/campuno
+https://guayerd76-dev-ed.develop.my.site.com/FundacionGuay/s/
