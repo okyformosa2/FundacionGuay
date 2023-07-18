@@ -31,4 +31,4 @@ La misma consta de una página en el cual invita a los futuros o posibles donant
 
 ## Link de la página
 
-https://github.com/okyformosa2/FundacionGuay.git
+
